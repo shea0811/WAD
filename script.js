@@ -3,7 +3,7 @@ window.onload = function() {
     const params = new URLSearchParams(window.location.search);
     const productCode = params.get('productCode');
 
-    fetch('WADCA1.xml') // Ensure the path to your XML file is correct
+    fetch('https://raw.githubusercontent.com/shea0811/WAD/main/script.js') // Ensure the path to your XML file is correct
         .then(response => response.text())
         .then(data => {
             const parser = new DOMParser();
